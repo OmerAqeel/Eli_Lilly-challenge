@@ -1,9 +1,43 @@
 .spinner{
-  font-size: 140px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  right: 50%;
 }
-.spinner:after {
-  content: '◌';
+.spinner:after{
+  content: "";
+  display: block; // making the element a block element
+  top: 50%; 
+  left: 0; /* setting the left position to 0 */
+  width: 100%; /* setting the width to 100% */
+  height: 100%;
+  border-radius: 50%; /* making the element a circle */
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #6a5acd; /* setting the border color (purple)*/
+  animation: spin 3s linear infinite; /* applying the spin animation (duration: 3s, animation type: linear, iteration: infinite) */
 }
+/* animation */
+@keyframes spin { /* defining the spin animation */
+  0% { transform: rotate(0deg); } /* setting the initial position of the element */
+  100% { transform: rotate(360deg); } /* setting the final position of the element */
+}
+/*Changing the background color of the page to green */
+body{
+  background-color: #3cb371; // green
+}
+/* changing the colour of h1 to white */
+h1{
+  color: white;
+}
+/* styling the horizontal line */
+.line{
+  width:100%;
+  border: 2px solid #6a5acd;
+}
+/*The code above is the CSS code for the spinner. The code is divided into two parts. The first part is the spinner and the second part is the styling of the page.*/
 
 #chart {
     border: 1px solid black;

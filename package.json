@@ -1,14 +1,18 @@
 {
-  "name": "stx-js-recruitment",
-  "version": "0.0.1",
-  "description": "STXNext JS recruitment test",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2"
-  }
+    "name": "stx-js-recruitment",
+    "version": "0.0.1",
+    "description": "STXNext JS recruitment test",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "fs": "^0.0.1-security",
+        "jsdom": "^20.0.3",
+        "node-fetch": "^3.3.0"
+    }
 }
